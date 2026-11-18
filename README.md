@@ -20,3 +20,10 @@ Manual quality inspection on manufacturing assembly lines is slow, inconsistent,
    pip install -r requirements.txt
    ```
 2. Run data exploration (see `notebooks/01_data_exploration.ipynb`).
+
+## Run the desktop quality-control app
+
+On Windows, double-click `run_app.bat` from the project folder. The app uses
+`final_casting_model.pth` to classify a selected product image or show a
+random defective/normal test pair. If the checkpoint is missing, run
+`notebooks/03_model_evaluation.ipynb` to train and save it first.
